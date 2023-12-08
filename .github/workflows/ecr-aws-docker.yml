@@ -4,9 +4,6 @@ on:
  
   push:
     branches: [ main ]
-    branche: [ master ]
-    PR:
-      branches: [ main ]
 
 jobs:
   
