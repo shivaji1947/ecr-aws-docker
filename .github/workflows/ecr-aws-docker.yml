@@ -17,11 +17,7 @@ jobs:
     - name: Check out code
       uses: actions/checkout@v2
 
-    -name: Build & Push Image
-      run:  echo “$[{ secrets.DOCKERPW }] | docker login -u "shivajifordocker"  —password-stdin
-      docker image build -t shivajifordocker/testcicd: tag-name
-      docker push shivajifordocker/testcicd: tag-name
-    
+  
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
