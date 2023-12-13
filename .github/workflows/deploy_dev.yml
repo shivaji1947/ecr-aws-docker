@@ -4,10 +4,10 @@ name: Deploy DEV - Pull Request to development
 on:
   pull_request:
     branches:
-    - development
+    - shivaji1947-patch-1-Dev
     paths-ignore:
     - 'README.md'
-
+    
 # Environment variables available to all jobs and steps in this workflow
 env:
   PROJECT: medium
